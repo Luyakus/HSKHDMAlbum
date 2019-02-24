@@ -12,7 +12,7 @@
 @class HSKHDMAlbum;
 
 extern NSString * const HSKHDMPhotoLibraryChangedNotification;
-@interface HSKHDMAsset : HSKBaseModel
+@interface HSKHDMAsset : YYModel
 @property (nonatomic, readonly) RACSignal *imageSignal;
 @property (nonatomic, readonly) PHAsset   *asset;
 @property (nonatomic, readonly) CGSize     targetSize;
@@ -23,7 +23,7 @@ extern NSString * const HSKHDMPhotoLibraryChangedNotification;
 @end
 
 
-@interface HSKHDMAlbum : HSKBaseModel
+@interface HSKHDMAlbum : YYModel
 @property (nonatomic, readonly) NSString    *title;
 @property (nonatomic, readonly) CGSize       targetSize;
 @property (nonatomic, readonly) HSKHDMAsset *cover;
